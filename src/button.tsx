@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react'
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
 import * as COLORS from './colors'
 
@@ -12,13 +12,9 @@ interface ButtonProps {
 const Button = (props: ButtonProps) => {
   const { label, onPress, disabled } = props
 
-
   return (
-    <TouchableOpacity
-      disabled={disabled}
-      onPress={onPress.bind(null, label)}
-    >
-      <View style={styles.button}>
+    <TouchableOpacity disabled={disabled} onPress={onPress.bind(null, label)}>
+      <View style={[styles.button, disabled && styles.disabledButton]}>
         <Text style={styles.buttonText}>{label}</Text>
       </View>
     </TouchableOpacity>
@@ -30,15 +26,18 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.darkbeige,
     width: 80,
     height: 80,
-    borderRadius: 80/2,
+    borderRadius: 80 / 2,
     alignItems: 'center',
     justifyContent: 'center',
-    margin: 5
+    margin: 5,
+  },
+  disabledButton: {
+    opacity: 0.3,
   },
   buttonText: {
     fontWeight: '600',
-    fontSize: 24
-  }
+    fontSize: 24,
+  },
 })
 
 export default Button
