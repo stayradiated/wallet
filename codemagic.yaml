@@ -37,7 +37,7 @@ workflows:
         script: cd ios && pod install
 
       - name: Build ipa for distribution
-        script: xcode-project build-ipa --project "$FCI_BUILD_DIR/ios/Wallet.xcodeproj" --scheme "Wallet"
+        script: xcode-project build-ipa --workspace "$FCI_BUILD_DIR/ios/Wallet.xcworkspace" --scheme "Wallet"
 
     artifacts:
       - build/**/outputs/**/*.aab
