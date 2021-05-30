@@ -44,11 +44,14 @@ workflows:
       - build/ios/ipa/*.ipa
 
     publishing:
-      # See the following link for details about email publishing - https://docs.codemagic.io/publishing-yaml/distribution/#email
       email:
         recipients:
           - codemagic@stayradiated.com
         notify:
           success: true
           failure: false
+
+      app_store_connect:
+        apple_id: apple@stayradiated.com
+        password: Encrypted(Z0FBQUFBQmdzMHFpbkdvcGJuRWRYcFJHREdPdURRVzEyMmhrMUtDT1RQMFg1Y0UyR0VJQVpOV29aMEtXYWtVVnl3clhBNi1oY1dNQlBQQzVQSmF5amV3SnA4dXl6V3NEZmozeHR6ZkdZZW5HcF9RdkM0ODg5OFk9)
 
