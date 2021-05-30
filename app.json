@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Wallet",
-    "slug": "wallet",
+    "name": "Postwallet",
+    "slug": "postwallet",
     "privacy": "public",
     "platforms": [
       "ios",
