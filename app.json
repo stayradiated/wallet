@@ -24,11 +24,11 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "dev.watermelonsky.codemagictest",
+      "bundleIdentifier": "dev.watermelonsky.postwallet",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "dev.watermelonsky.codemagictest"
+      "package": "dev.watermelonsky.postwallet"
     }
   }
 }

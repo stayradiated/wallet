@@ -1,4 +1,4 @@
-package dev.watermelonsky.codemagictest;
+package dev.watermelonsky.postwallet;
 import android.content.res.Configuration;
 import android.content.Intent;
 
