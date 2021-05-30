@@ -45,7 +45,7 @@ workflows:
                     xcode-project use-profiles
       - name: Build ipa for distribution
         script: |
-                    xcode-project build-ipa --workspace "$FCI_BUILD_DIR/ios/Wallet.xcodeproj/project.xcworkspace" --scheme "Wallet" 
+                    xcode-project build-ipa --project "$FCI_BUILD_DIR/ios/Wallet.xcodeproj" --scheme "Wallet" 
 
     artifacts:
       - build/ios/ipa/*.ipa
