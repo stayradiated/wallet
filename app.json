@@ -23,9 +23,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.stayradiated.wallet",
+      "supportsTablet": false,
+      "bundleIdentifier": "dev.watermelonsky.codemagictest",
       "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "dev.watermelonsky.codemagictest"
     }
   }
 }
